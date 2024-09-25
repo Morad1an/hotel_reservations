@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Мои брони</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+        }
+        .booking-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .booking-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center">
+    <nav class="bg-white shadow-md py-4 w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-3xl font-bold text-gray-700">
+                Набронировал
+            </div>
+            <div class="space-x-4 text-gray-700">
+                <a href="/search" class="hover:underline">Поиск отелей</a>
+                <a href="/logout" class="hover:underline">Выход</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-10">
+        <h2 class="text-4xl font-bold text-gray-700 mb-8">Мои брони</h2>
+
+        <!-- Booking 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8 flex booking-card">
+            <img class="w-1/3 object-cover responsive-img" src="https://avatars.mds.yandex.net/get-travel-rooms/3613454/2a0000018cfb3ca7ca2966be4c8a1789cbfe/XXXL" alt="Фото номера">
+            <div class="p-6 flex flex-col justify-between w-2/3">
+                <div class="flex justify-between">
+                    <div>
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-2">Cosmos Collection Altay Resort</h2>
+                        <h4 class="text-lg text-gray-600">Номер: Улучшенный с террасой и видом на озеро</h4>
+                        <h4 class="text-lg text-gray-600">Услуги: Wi-Fi, Парковка, Завтрак</h4>
+                        <h4 class="text-lg text-gray-600">Дата заезда: 2024-08-01</h4>
+                        <h4 class="text-lg text-gray-600">Дата выезда: 2024-08-05</h4>
+                        <h4 class="text-lg text-gray-600">Адрес: Республика Алтай, Майминский район, село Урлу-Аспак, Лесхозная улица, 20</h4>
+                    </div>
+                    <div class="text-right">
+                        <h4 class="text-lg text-gray-600">Стоимость: 24500 руб/ночь</h4>
+                        <h5 class="text-lg text-gray-600">Общая стоимость: 98000 руб</h5>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="/cancel-booking/1" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">Отменить бронь</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8 flex booking-card">
+            <img class="w-1/3 object-cover responsive-img" src="https://content-storage.ru/uploads/images/64/ba/64ba59055a1c18.41334004.jpg" alt="Фото номера">
+            <div class="p-6 flex flex-col justify-between w-2/3">
+                <div class="flex justify-between">
+                    <div>
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-2">Bridge Resort</h2>
+                        <h4 class="text-lg text-gray-600">Номер: Комфорт с видом</h4>
+                        <h4 class="text-lg text-gray-600">Услуги: Wi-Fi, Кондиционер</h4>
+                        <h4 class="text-lg text-gray-600">Дата заезда: 2024-08-10</h4>
+                        <h4 class="text-lg text-gray-600">Дата выезда: 2024-08-15</h4>
+                        <h4 class="text-lg text-gray-600">Адрес: посёлок городского типа Сириус, Фигурная улица, 45</h4>
+                    </div>
+                    <div class="text-right">
+                        <h4 class="text-lg text-gray-600">Стоимость: 22000 руб/ночь</h4>
+                        <h5 class="text-lg text-gray-600">Общая стоимость: 110000 руб</h5>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="/cancel-booking/2" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">Отменить бронь</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden mb-8 flex booking-card">
+            <img class="w-1/3 object-cover responsive-img" src="static/images/3_room.webp" alt="Фото номера">
+            <div class="p-6 flex flex-col justify-between w-2/3">
+                <div class="flex justify-between">
+                    <div>
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-2">Отель Сити</h2>
+                        <h4 class="text-lg text-gray-600">Номер: Делюкс</h4>
+                        <h4 class="text-lg text-gray-600">Услуги: Wi-Fi, Завтрак, Фитнес-центр</h4>
+                        <h4 class="text-lg text-gray-600">Дата заезда: 2024-08-20</h4>
+                        <h4 class="text-lg text-gray-600">Дата выезда: 2024-08-25</h4>
+                    </div>
+                    <div class="text-right">
+                        <h4 class="text-lg text-gray-600">Стоимость: 7000 руб/ночь</h4>
+                        <h5 class="text-lg text-gray-600">Общая стоимость: 35000 руб</h5>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <a href="/cancel-booking/3" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700">Отменить бронь</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
